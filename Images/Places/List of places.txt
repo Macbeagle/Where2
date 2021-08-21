@@ -7,5 +7,5 @@ Mermaids By The Bay. Price $$, Activity *, Decent Weather
 Pelican Park. Price $, Activity **, Good weather 
 Seafood Town. Price $$, Activity *, Decent Weather 
 Scarborough. Beach Park price $, Activity **, Good weather
-Snap Fitness. Price $$, Activity ***, All Weather
+Snap Fitness. Price $, Activity ***, All Weather
 Westfield Shopping Centre Price. $$, Activity ***, All Weather
