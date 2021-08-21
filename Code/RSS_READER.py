@@ -1,7 +1,14 @@
-"""Quick attempt, not functional"""
-import feedparser
-Feed = feedparser.parse("https://www.moretonbay.qld.gov.au/feed.rss?listname=MBRC%20News")
-print('Number of RSS posts :'), len(Feed.entries)
-
-entry = Feed.entries[1]
-print('Post Title :'), entry.title
+class ReadFeed:
+    def __init__(self, url. headings):
+        self.url = url
+        try:
+            self.r = requests.get(url, headers=self.HEADERS)
+            self.status_code = self.r.status_code
+        except Exception as e:
+            print("Error fetching: ", url)
+            print(e)
+        try:
+            self.soup = BeautifulSoup(self.r.text, 'lxml')
+        except Exception as e:
+            print("Could not parse XML: ", self.url)
+            print(e)
