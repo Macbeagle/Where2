@@ -181,6 +181,6 @@ options = ['Breakfast :', 'Activity 1 :', 'Lunch :', 'Activity 2 :', 'Dinner :']
 for option in first_itinerary:
 	print(f"\n{options[count]}")
 	count += 1
-	print(option[0])
+	print(option[0].title())
 	for key, value in option[1].items():
 		print(f"\t{key} : {value}")
