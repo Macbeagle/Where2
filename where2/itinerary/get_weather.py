@@ -18,7 +18,7 @@ def write_weather_data():
             return False   
     weather = weather_forcast()
 
-    with open('current_weather_results.txt', 'a+') as f:
+    with open('weather_records.txt', 'a+') as f:
         f.write(f"{weather}\n")
 
     return weather
@@ -26,7 +26,7 @@ def write_weather_data():
 def get_weather_data():
     try:
         #Read in weather from within the hour
-        with open('current_weather_results.txt', 'r') as f:
+        with open('weather_records.txt', 'r') as f:
             weather = f.readlines()[-1]
             if 'False' in weather:
                 weather = False
