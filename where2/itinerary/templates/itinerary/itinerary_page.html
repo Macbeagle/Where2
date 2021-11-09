@@ -1,0 +1,20 @@
+{% extends 'itinerary/main.html' %}
+{% block content %}
+
+    <h1>Your Itinerary</h1>
+    <h2>{{Weather}}</h2>
+    <h3>{{ Time }}</h3>
+    <ul>
+        {% for rest in Itinerary %}
+            <li>
+                {{ rest.title }}
+                <ul>
+                    <li>{{ rest.description }}</li>
+                    <li>{{ rest.get_cost_display }}</li>
+                </ul>
+            </li>
+        {% endfor%}
+    </ul>
+    <button onClick="window.location.reload();">Generate New Itinerary</button>
+
+{% endblock content %}
