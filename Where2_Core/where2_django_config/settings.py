@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'where2.urls'
+ROOT_URLCONF = 'where2_django_config.urls'
 
 PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
 
@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'where2.wsgi.application'
+WSGI_APPLICATION = 'where2_django_config.wsgi.application'
 
 
 # Database
