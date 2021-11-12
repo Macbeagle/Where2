@@ -7,13 +7,16 @@ from pytz import timezone
 
 class Itinerary:
     ''' Class for itinerary object '''
-    def __init__(self):
+    def __init__(self, itinerary_size):
         self.itinerary = []
         self.previous_food = []
         self.previous_activity = []
         self.current_time = 0
         self.get_local_time()
-        self.resturant_dict, self.activity_dict = df.format_data(int(self.current_time[0:2]))
+        if itinerary_size == 'current':
+            self.resturant_dict, self.activity_dict = df.format_data(int(self.current_time[0:2]))
+        elif itinerary_size == 'full':
+            self.resturant_dict, self.activity_dict = df.format_data(0)
     
     def get_local_time(self):
         ''' Gets the local time when itinerary is created. '''

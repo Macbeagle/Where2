@@ -3,14 +3,25 @@
 
     <h1>Your Itinerary</h1>
     <h2>{{Weather}}</h2>
-    <h3>{{ Time }}</h3>
     <ul>
-        {% for rest in Itinerary %}
+        {% for item in Itinerary %}
+            {% if item.genre == 'FO'%}
+                {% if item.time_scene == 'BR' %}
+                    <h2> BreakFast </h2>
+                {% elif item.time_scene == "LU" %}
+                    <h2> Lunch </h2>
+                {% elif item.time_scene == "DI" %}
+                    <h2> Dinner </h2>
+                {% endif %}
+            {% elif item.genre == "AC" %}
+                <h2> Activity </h2>
+            {% endif %}
+
             <li>
-                {{ rest.title }}
+                {{ item.title }}
                 <ul>
-                    <li>{{ rest.description }}</li>
-                    <li>{{ rest.get_cost_display }}</li>
+                    <li>{{ item.description }}</li>
+                    <li>{{ item.get_cost_display }}</li>
                 </ul>
             </li>
         {% endfor%}
