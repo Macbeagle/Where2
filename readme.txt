@@ -5,7 +5,7 @@ Information on how to install and run the server locally is in the following par
 
 This project was built through a python virtual environment allowing the packages to be stored in a central container. 
 All packages have been exported from this environment and stored into the requirements.txt file located in the main folder.
-To install these requirements, run ìpip install -r requirements.txtî from the command line interface from within the same directory. 
-After the packages are installed, cd into where2 and run the command, ìpython manage.py runserverî and the Django server will be booted on your device. 
+To install these requirements, run ‚Äúpip install -r requirements.txt‚Äù from the command line interface from within the same directory. 
+After the packages are installed, cd into where2_core and run the command, ‚Äúpython manage.py runserver‚Äù and the Django server will be booted on your device. 
 Alternatively the run.sh bash script should laumch the program.
 
