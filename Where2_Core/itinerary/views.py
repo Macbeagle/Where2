@@ -15,7 +15,7 @@ def check_weather():
 class HomeView(TemplateView):
     #Homepage view
     check_weather()
-    template_name = 'itinerary/index.html'
+    template_name = 'itinerary/main.html'
 
 def itinerary_current_view(request):
     #Weather Itinerary View

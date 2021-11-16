@@ -42,7 +42,7 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ms-auto navbar-nav-scroll">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href=" {% url 'home' %} ">Home</a>
+                        <a class="nav-link" href=" {% url 'home' %} ">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href=" {% url 'itinerary_current' %} ">Itineary</a>
@@ -80,8 +80,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="h1-large">Creative Social Media Digital Agency</h1>
-                        <a class="btn-solid-lg" href=" {% static '#introduction' %} ">Discover</a>
+                        <h1 class="h1-large">Where2</h1>
+                        <a class="btn-solid-lg" href=" {% url 'itinerary_current' %} ">Generate an itineary for today</a>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
@@ -96,6 +96,17 @@
     </header> <!-- end of header -->
     <!-- end of header -->
 {% block content %}
+
+
+
+
+
+
+
+
+
+
+
 
 
 {% endblock %}
