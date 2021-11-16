@@ -30,7 +30,7 @@
         <div class="container">
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href=" {% static 'index.html' %} "><img src=" {% static 'images/logo.svg' %} " alt="alternative"></a> 
+            <a class="navbar-brand logo-image" href="{% url 'home' %}">Home><img src=" {% static 'images/logo.svg' %} " alt="alternative"></a> 
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text" href=" {% static 'index.html' %} ">Desi</a> -->
@@ -42,26 +42,16 @@
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ms-auto navbar-nav-scroll">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href=" {% static '#header' %} ">Home</a>
+                        <a class="nav-link active" aria-current="page" href=" {% url 'home' %} ">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=" {% static '#services' %} ">Services</a>
+                        <a class="nav-link" href=" {% url 'itinerary_current' %} ">Itineary</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=" {% static '#projects' %} ">Projects</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href=" {% static 'article.html' %} ">Article Details</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href=" {% static 'terms.html' %} ">Terms Conditions</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href=" {% static 'privacy.html' %} ">Privacy Policy</a></li>
-                        </ul>
+                        <a class="nav-link" href=" {% url 'resturants' %} ">Restaurants</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=" {% static '#contact' %} ">Contact</a>
+                        <a class="nav-link" href=" {% url 'activities' %} ">Activities</a>
                     </li>
                 </ul>
                 <span class="nav-item social-icons">
