@@ -23,7 +23,9 @@
                     {% for act in Activities %}
                     <h2 class="mt-5 mb-3">{{ act.title }}</h2>
                     <p class="mb-5"> {{ act.description }} </p>
-                    <p class="mb-5">Cost: {{ act.get_cost_display }} </p>
+                    <p class="mb-5"><strong>Cost:</strong> {{ act.get_cost_display }} </p>
+                    <p class="mb-5"><strong>Address:</strong> {{ act.address1 }}<br>{{ act.address2 }}</p>
+
                     {% endfor%}
                 </div> <!-- end of col -->
             </div> <!-- end of row -->

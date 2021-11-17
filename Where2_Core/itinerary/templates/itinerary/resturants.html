@@ -24,19 +24,24 @@
                     {% for rest in Breakfast_Resturants %}
                     <h2 class="mt-5 mb-3">{{ rest.title }}</h2>
                     <p class="mb-5"> {{ rest.description }} </p>
-                    <p class="mb-5">Cost: {{ rest.get_cost_display }} </p>
+                    p class="mb-5"><strong>Cost/Rating:</strong> {{ rest.get_cost_display }}/{{ rest.rating }}</p>
+                    <p class="mb-5"><strong>Address:</strong> {{ rest.address1 }}<br>{{ rest.address2 }}</p>
                     {% endfor%}
+
                     <h1 class="mt-5 mb-3">Lunch</h1>
                     {% for rest in Lunch_Resturants %}
                     <h2 class="mt-5 mb-3">{{ rest.title }}</h2>
                     <p class="mb-5"> {{ rest.description }} </p>
-                    <p class="mb-5">Cost: {{ rest.get_cost_display }} </p>
+                    <p class="mb-5"><strong>Cost/Rating:</strong> {{ rest.get_cost_display }}/{{ rest.rating }}</p>
+                    <p class="mb-5"><strong>Address:</strong> {{ rest.address1 }}<br>{{ rest.address2 }}</p>
                     {% endfor%}
+
                     <h1 class="mt-5 mb-3">Dinner</h1>
                     {% for rest in Dinner_Resturants %}
                     <h2 class="mt-5 mb-3">{{ rest.title }}</h2>
                     <p class="mb-5"> {{ rest.description }} </p>
-                    <p class="mb-5">Cost: {{ rest.get_cost_display }} </p>
+                    <p class="mb-5"><strong>Cost/Rating:</strong> {{ rest.get_cost_display }}/{{ rest.rating }}</p>
+                    <p class="mb-5"><strong>Address:</strong> {{ rest.address1 }}<br>{{ rest.address2 }}</p>
                     {% endfor%}
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
