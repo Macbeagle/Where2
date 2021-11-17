@@ -110,7 +110,7 @@
 		<div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">Examples of local Restaurants</h2>
+                    <h2 class="h2-heading">Examples of local Restaurantsand Activities</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -119,63 +119,44 @@
                     <!-- Filter -->
                     <div class="button-group filters-button-group">
                         <button class="button is-checked" data-filter="*">SHOW ALL</button>
-                        <button class="button" data-filter=".business">BUSINESS</button>
-                        <button class="button" data-filter=".finance">FINANCE</button>
-                        <button class="button" data-filter=".software">SOFTWARE</button>
+                        <button class="button" data-filter=".rest">Restaurants</button>
+                        <button class="button" data-filter=".act">Activity</button>
                     </div> <!-- end of button group -->
                     <div class="grid">
-                        <div class="element-item finance">
-                            <a href=" {% static 'article.html' %} ">
-                                <img class="img-fluid" src=" {% static 'images/project-1.jpg' %} " alt="alternative">
-                                <p><strong>Online banking</strong> - delivered to and to major company in pharmace ski jump from</p>
+                        <div class="element-item rest">
+                            <a href=" {% url 'resturants' %}  ">
+                                <img class="img-fluid" src=" {% static 'images/BeardyBar.jpg' %} " alt="Beardy's Bar and Kitchen">
+                                <p><strong>Beardy's Bar and Kitchen</strong> - Offering one of the best selections of Craft Beer in the area coupled with awesome burgers and a chilled atmosphere it is the perfect place to catch up, chill out or pig out. </p>
                             </a>
                         </div>
-                        <div class="element-item finance">
-                            <a href=" {% static 'article.html' %} ">
-                                <img class="img-fluid" src=" {% static 'images/project-2.jpg' %} " alt="alternative">
-                                <p><strong>Loans company</strong> - enjoyed minutes related as at on on. Is fanny dried camping today</p>
+                        <div class="element-item act">
+                            <a href=" {% url 'activities' %} ">
+                                <img class="img-fluid" src=" {% static 'images/westfield.jpg' %} " alt="Westfield Shopping Centre">
+                                <p><strong>Westfield Shopping Centre</strong> - Westfield is your one-stop destination for shopping, leisure and entertainment. Discover 1000s of popular retailers in fashion, home, decor and more. </p>
                             </a>
                         </div>
-                        <div class="element-item finance">
-                            <a href=" {% static 'article.html' %} ">
-                                <img class="img-fluid" src=" {% static 'images/project-3.jpg' %} " alt="alternative">
-                                <p><strong>Refinance firm</strong> - distrusts an it contented perceived attending oh nouns here</p>
+                        <div class="element-item rest">
+                            <a href=" {% url 'resturants' %}  ">
+                                <img class="img-fluid" src=" {% static 'images/mermaid.jpeg' %} " alt="Mermaids By the Bay">
+                                <p><strong>Mermaids By the Bay</strong> - Fish & Chips takeaway with a magnificent waterfront dine-in restaurant </p>
                             </a>
                         </div>
-                        <div class="element-item business finance">
-                            <a href=" {% static 'article.html' %} ">
-                                <img class="img-fluid" src=" {% static 'images/project-4.jpg' %} " alt="alternative">
-                                <p><strong>Financial products</strong> - thoroughly estimating introduced stimulated why but front</p>
+                        <div class="element-item rest">
+                            <a href=" {% url 'resturants' %}  ">
+                                <img class="img-fluid" src=" {% static 'images/sea.png' %} " alt="alternative">
+                                <p><strong>Sea Salt and Vine</strong> - Our menu is contemporary Australian cuisine. We have some café favourites combined with a selection of modern affordable dishes. </p>
                             </a>
                         </div>
-                        <div class="element-item business finance">
-                            <a href=" {% static 'article.html' %} ">
-                                <img class="img-fluid" src=" {% static 'images/project-5.jpg' %} " alt="alternative">
-                                <p><strong>Credit cards</strong> - enjoyed minutes related as at on on. Is fanny dried out yesterday</p>
+                        <div class="element-item  rest">
+                            <a href=" {% url 'resturants' %}  ">
+                                <img class="img-fluid" src=" {% static 'images/bold.png' %} " alt="alternative">
+                                <p><strong>The Bold Bean Cafe</strong> - Boutique breakfast and coffee </p>
                             </a>
                         </div>
-                        <div class="element-item business software">
-                            <a href=" {% static 'article.html' %} ">
-                                <img class="img-fluid" src=" {% static 'images/project-6.jpg' %} " alt="alternative">
-                                <p><strong>Software robots</strong> - as often me goodness as reserved raptures to mistaken</p>
-                            </a>
-                        </div>
-                        <div class="element-item business software">
-                            <a href=" {% static 'article.html' %} ">
-                                <img class="img-fluid" src=" {% static 'images/project-7.jpg' %} " alt="alternative">
-                                <p><strong>Company control</strong> - steepest oh screened he gravity he mr sixteen esteems his</p>
-                            </a>
-                        </div>
-                        <div class="element-item business software">
-                            <a href=" {% static 'article.html' %} ">
-                                <img class="img-fluid" src=" {% static 'images/project-8.jpg' %} " alt="alternative">
-                                <p><strong>Audit reports</strong> - mile home its new way with high told said finished to learn</p>
-                            </a>
-                        </div>
-                        <div class="element-item business software">
-                            <a href=" {% static 'article.html' %} ">
-                                <img class="img-fluid" src=" {% static 'images/project-9.jpg' %} " alt="alternative">
-                                <p><strong>Big business</strong> - no horrible blessing landlord dwelling dissuade if we can hear</p>
+                        <div class="element-item  act">
+                            <a href=" {% url 'activities' %} ">
+                                <img class="img-fluid" src=" {% static 'images/snap_fitness.jpg' %} " alt="Snap Fitness">
+                                <p><strong>Snap Fitness</strong> - If you looking for more than just a gym, Snap Fitness Deception Bay is that.</p>
                             </a>
                         </div>
                     </div> <!-- end of grid -->
